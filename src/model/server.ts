@@ -5,7 +5,7 @@ import config from "../config";
 import IRoutes from "../interfaces/route";
 import ExpressRoutes from "../routes";
 
-export default class ServerExpress implements IServer {
+export default class ServerExpress implements IServer<Express> {
   app: Express;
   port?: number;
   constructor() {
